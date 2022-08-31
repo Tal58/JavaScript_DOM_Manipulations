@@ -1,4 +1,4 @@
-## JavaScript_DOM_Manipulations | Explore Turkiye UNESCO
+## JavaScript DOM Manipulations | Explore Turkiye UNESCO
 
 👨‍💻 This project aims to improve my <b>HTML/CSS/JavaScript and DOM skills </b> 
 <br><br>
