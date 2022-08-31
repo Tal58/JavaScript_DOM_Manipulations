@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    background: url("./images/explore.jpg") no-repeat center center/ cover;
+  }
+  body h2{
+    font-size: 1vw;
+  }
+  header {
+    font-size: 2vw;
+    padding: 1vw;
+    width: 80%;
+    color: red;
+    border-radius: 5px;
+  }
+  .main-content {
+    color: white;
+    width: 100%;
+    height: auto;
+
+  }
+  .main-content .text-area {
+    font-size:2vw;
+    line-height: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-area button {
+    background-color: red;
+    color: #fff;
+    font-size: 1.5vw;
+    padding: 1vw 1.5vw;
+   margin: 1vw;
+    border-radius: 5vw;
+    cursor: pointer;
+  }
+  .button-area button:active {
+    background-color: black;
+  }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 15px;
+    }
+    .container {
+      width: 400px;
+      height: auto;
+    }
+  }
