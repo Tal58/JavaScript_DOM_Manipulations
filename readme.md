@@ -1,6 +1,7 @@
 
 
-## HTML CSS WORKSHOP 🌄
+## 
+JavaScript DOM Manipulations🌄
 
 🌲This repo shows some solutions of HTML/CSS/JS problem/assignment/coding challenge activities related to DOM Manipulations.
 
