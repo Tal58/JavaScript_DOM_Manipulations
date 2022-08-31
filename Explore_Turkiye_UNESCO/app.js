@@ -80,6 +80,6 @@ const quotes = [
 btn.addEventListener("click", function () {
   let random = Math.floor(Math.random() * quotes.length);
   quote.innerText = quotes[random].quote;
-  document.body.style.background = `url(${(quotes[random].Image)}) no-repeat center center/ contain`;
+  document.body.style.background = `url(${(quotes[random].Image)}) no-repeat center center/ cover`;
   document.getElementById("header").style.color = "white"
 });
