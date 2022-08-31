@@ -3,7 +3,6 @@
 👨‍💻 This project aims to improve my <b>HTML/CSS/JavaScript and DOM skills </b> 
 <br><br>
 🎯 This project shows how to build an interactive landing page that change a text, its' color and also background image...
-<br><br>
 
 🔗 To see live version 🎯
 <br>
