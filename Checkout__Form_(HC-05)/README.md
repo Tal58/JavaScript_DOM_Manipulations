@@ -19,8 +19,6 @@ Purpose of the this project is to write a code that make a checkout form.
 
 ![Form](./images/checkout.png)
 
-* Functionally similar to this: [Form](https://aaron-clarusway.github.io/form/)
-
 <br>
 
 -  User story;
@@ -33,7 +31,7 @@ Purpose of the this project is to write a code that make a checkout form.
 
    - When I click submit button or press enter, I can see a successful alert if validation succeeds
 
-
+🔗 To see live version 🎯
 <center> ⌛ Happy Coding  ✍ </center>
 
 br><br>
