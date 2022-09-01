@@ -31,7 +31,8 @@ Purpose of the this project is to write a code that make a checkout form.
 
    - When I click submit button or press enter, I can see a successful alert if validation succeeds
 
-🔗 To see live version 🎯
+🔗 To see live version 🎯https://tal58.github.io/JavaScript_DOM_Manipulations/Checkout__Form_(HC-05)/
+
 <center> ⌛ Happy Coding  ✍ </center>
 
 br><br>
