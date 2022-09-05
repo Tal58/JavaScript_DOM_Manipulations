@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: url("./task.jpg") no-repeat center center/ cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#add-task-container{
+     background: #fff;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw;
+    display: flex;
+    margin-bottom: 2%;
+    align-items: center;
+}
+
+input{
+    flex: 5;
+    width: 30vw;
+    height: 2.5vw;
+    margin: 3% 2% 3% 2%;
+    border-radius: 0.5vw;
+    font-size: 2vw;
+    padding: 1%;
+}
+
+#add-task {
+    flex: 1;
+    transition: 0.3s;
+    font-size: 1.5vw;
+    padding: 0.15vw;
+    background-color: #fff;
+    color: green;
+    border: green solid 2px;
+    border-radius: 1vw;
+    height: 3.5vw;
+    width: 2.7vw;
+    margin-right: 2%;
+}
+
+#add-task:hover{
+    background-color: green;
+    color: #fff;
+}
+
+
+/* styling for task which get added to-do list */
+
+.task{
+background-color: #fff;
+border-radius: 1vw;
+box-shadow: 0 0 1vw;
+padding: 2%;
+margin-bottom: 1.5%;
+display: flex;
+justify-content: space-between;
+}
+.task li{
+    list-style: none;
+    flex: 4;
+    padding: 1%;
+    font-size: 2vw;
+    margin: 1.5%;
+    height: 2vw;
+}
+
+.task button{
+    flex : 1;
+    border-radius: 1vw;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.task .checkTask{
+    color: orange;
+    margin-right: 1%;
+    border: solid 2px orange;
+    font-size: 2vw;
+}
+
+.task .checkTask:hover{
+    background-color: orange;
+    color: #fff;
+}
+
+.task .deleteTask{
+    color: red;
+    border: solid 2px red;
+    font-size: 2vw;
+}
+
+.task .deleteTask:hover{
+    background-color: red;
+    color: #fff;
+}
+
+@media only screen and (max-width: 920px) {
+    #add-task-container{
+        border-radius: 2vw;
+    }
+    input{
+        width: 80vw;
+        height: 8vw;
+        border-radius: 1.2vw;
+        font-size: 5vw;
+        }
+        #add-task {
+        font-size: 5vw;
+        height: 8vw;
+        }
+        .task li{
+            list-style: none;
+            flex: 4;
+            padding: 1%;
+            font-size: 5vw;
+        }
+        .task .checkTask{
+            font-size: 5vw;
+        }
+        .task .deleteTask{
+            font-size: 4vw;
+        }
+}
+
