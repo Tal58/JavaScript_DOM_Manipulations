@@ -2,7 +2,7 @@
 
 👨‍💻 This project aims to improve my <b>HTML/CSS/JavaScript and DOM skills </b> 
 <br><br>
-🎯 This project shows how to build an interactive landing page that create new div as a "task" , new "li" including input task value and finally create check and delete button when click on the +buttton...
+🎯 This project shows how to build an interactive landing page that create new div as a "task" , new "li" including input task value and finally create check and delete button when click on the + buttton...
 
 🔗 To see live version 🎯https://tal58.github.io/JavaScript_DOM_Manipulations/Enter_Task/
 <br>
