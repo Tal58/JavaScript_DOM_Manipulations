@@ -23,7 +23,9 @@
 <br>
 <br>
 <br>
-##📱Mobile version
+<br>
+## 📱Mobile version
+<br>
 
 <img src="./mobile.gif" align="left" alt="mobile_version">
 
