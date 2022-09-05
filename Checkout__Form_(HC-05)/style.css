@@ -107,9 +107,7 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-.later{
-    text-align: left;
-}
+
 label{
     font-size: 1.2vw;
 }
@@ -118,6 +116,7 @@ label{
 }
 .later{
     display: flex;
+    text-align: left;
 }
 .later label{
     font-size: 1vw;
@@ -218,3 +217,4 @@ label{
     margin-right: 5%;
     opacity: 0.7;
  }
+

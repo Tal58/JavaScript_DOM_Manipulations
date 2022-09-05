@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("./chess.webp") no-repeat center center/ cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#open-btn{
+    position: absolute;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    width: 45%;
+    height: 13%;
+    font-size: 3vw;
+    background: transparent;
+    color: white;
+    border: solid 0.2vw white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem white;
+    transition: 0.5s;
+}
+#open-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+#modal{
+    background-color: white;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 15vw;
+    height: 5vw;
+    padding: 2vw 1vw;
+    border-radius: 1vw;
+    font-size: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: animatemodal;
+    animation-duration: 0.4s;
+}
+
+#close-btn{
+    cursor: pointer;
+    font-size: 3vw;
+}
+
+#modal-container{
+    display: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes animatemodal {
+    from{
+        top: -300px;
+        opacity: 0;
+    }
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 920px){
+  
+#open-btn{
+    margin-left: 18%;
+    font-size: 7vw;
+    width: 65vw;
+    height: 25vw;
+}#close-btn{
+    font-size: 10vw;
+}
+#modal{
+    font-size: 8vw;
+    width: 50vw;
+    height: 15vw;
+    padding: 3%;
+    border-radius: 3vw;
+}
+}
