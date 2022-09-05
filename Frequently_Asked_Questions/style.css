@@ -49,7 +49,7 @@ body{
 }
 
 .accordion .content-container.active .question{
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: 600;
     transition: 1.5s;
 }
