@@ -1,4 +1,4 @@
-## JavaScript DOM Manipulations | Where I am? 🤔
+## JavaScript DOM Manipulations | Where am I? 🤔
 
 👨‍💻 This project aims to improve my <b>HTML/CSS/JavaScript and DOM skills </b> 
 <br><br>
