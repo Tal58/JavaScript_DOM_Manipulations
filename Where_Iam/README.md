@@ -2,7 +2,7 @@
 
 👨‍💻 This project aims to improve my <b>HTML/CSS/JavaScript and DOM skills </b> 
 <br><br>
-🎯 This project shows how to build an interactive landing page that make a small animation shows the modal container flowing from to center, which is hidden in the body...
+🎯 This project shows how to build an interactive landing page that make a small animation shows the modal container flowing from top to center, which is hidden in the body...
 
 🔗 To see live version 🎯
 <br>
