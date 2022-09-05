@@ -23,7 +23,7 @@ body{
 input{
     flex: 5;
     width: 30vw;
-    height: 2.5vw;
+    height: 3.2vw;
     margin: 3% 2% 3% 2%;
     border-radius: 0.5vw;
     font-size: 2vw;
@@ -39,7 +39,7 @@ input{
     color: green;
     border: green solid 2px;
     border-radius: 1vw;
-    height: 3.5vw;
+    height: 3.2vw;
     width: 2.7vw;
     margin-right: 2%;
 }
@@ -100,7 +100,7 @@ justify-content: space-between;
     color: #fff;
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 750px) {
     #add-task-container{
         border-radius: 2vw;
     }
