@@ -61,7 +61,7 @@ start.addEventListener("click", function(){
 })
 
 resetBtn.addEventListener("click", function(){
-    window.clearInterval(timerInterval);
+    // window.clearInterval(timerInterval);
     seconds = 0;
     minutes = 0;
     hours = 0;
