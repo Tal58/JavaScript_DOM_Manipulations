@@ -13,7 +13,7 @@ Purpose of the this project is to write a code that make a loan calculator web p
 - demonstrate their knowledge of algorithmic design principles by using function effectively.
 
 
-🔗 To see live version 🎯https://tal58.github.io/JavaScript_DOM_Manipulations/dom_without_CSS_and_emptyHTML/
+🔗 To see live version 🎯https://tal58.github.io/JavaScript_DOM_Manipulations/bank_loan/
 
 <center> ⌛ Happy Coding  ✍ </center>
 
