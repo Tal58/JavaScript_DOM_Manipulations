@@ -11,7 +11,7 @@ Purpose of the this project is to write a code that make a web page without CSS 
 - demonstrate their knowledge of algorithmic design principles by using function effectively.
 
 
-🔗 To see live version 🎯https://tal58.github.io/JavaScript_DOM_Manipulations/Checkout__Form_(HC-05)/
+🔗 To see live version 🎯https://tal58.github.io/JavaScript_DOM_Manipulations/dom_without_CSS_and_emptyHTML/
 
 <center> ⌛ Happy Coding  ✍ </center>
 
