@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 10% 5% 10% 5%;
+}
+.month-input, .amount-input{
+    border: 2px solid #ffc61d;
+    height: 7vh;
+}
+
+.p-display{
+    line-height: 0.1rem;
+}
+.button{
+    text-align: center;
+}
+.loan-table{
+    visibility: hidden;
+}

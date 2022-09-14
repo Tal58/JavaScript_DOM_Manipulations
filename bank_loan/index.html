@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/images.jfif" type="image/x-icon">
+    <title>Loan Calculator</title>
+</head>
+
+<body>
+
+
+    <section class="row loan-calculation justify-content-center">
+        <h2 class="text-center mb-5 text-warning"> Loan Calculator</h2>
+        <div class="col col-md-10 loan lh-1 mb-3 text-center">
+            <label for="loan">Loan Type:</label><br><br>
+            <select name="loan" id="role" class="col-md-12 p-1">
+                <option disabled selected hidden>Choose</option>
+                <option>Consumer loan(WEB-12 Months)</option>
+                <option>Consumer loan(WEB-24 Months)</option>
+                <option>Consumer loan(WEB-36 Months)</option>
+                <option>Housing Loan</option>
+                <option>Auto Loan</option>
+            </select>
+        </div>
+        <div class="col-md-12 month d-flex justify-content-center align-items-center gap-4">
+            <div class="col-md-2 col-sm-6 month-input d-flex justify-content-between p-2">
+                <p class="p-month col-md-1 col-sm-1"></p>
+                <p>Month</p>
+            </div>
+            <div class="col-md-8 col-sm-6 month-range">
+                <label for="range-month" class="form-label col-md-12"></label>
+                <input type="range" class="form-range-month col-md-12" min="0" max="12" id="range-month" disabled>
+                <div class="p-display col-md-12 justify-content-between d-flex">
+                    <p>0</p>
+                    <p class="max-month">12</p>
+                </div>
+            </div>
+        </div>
+        <div class="col amount d-flex justify-content-center align-items-center gap-4">
+            <div class="col-md-2 col-sm-6 amount-input d-flex justify-content-between p-2">
+                <p class="p-amount"></p>
+                <p>Amount</p>
+            </div>
+            <div class="col-md-8 col-sm-6 amount-range">
+                <label for="range-amount" class="form-label col-md-12"></label>
+                <input type="range" class="form-range-amount col-md-12" min="0" max="50000" id="range-amount" disabled>
+                <div class="p-display col-md-12 justify-content-between d-flex">
+                    <p>0</p>
+                    <p class="max-amount">$50.000</p>
+                </div>
+            </div>
+        </div>
+        <div class="button col-md-12 my-5">
+            <button type="button" class="btn btn-primary col-md-2">Calculate</button>
+        </div>
+
+        <div class="loan-table col-md-10 col-sm-12  mt-3">
+            <h2 class="text-warning col-md-12">Information of Loan</h2>
+            <div class="table">
+                <table class="table table-bordered border-warning mt-4 col-md-5 col-sm-12">
+                    <tbody>
+                        <tr>
+                            <th>Requested Amount</th>
+                            <td id="requested-amount"></td>
+                        </tr>
+                        <tr>
+                            <th>Total Month</th>
+                            <td id="month"></td>
+                        </tr>
+                        <tr>
+                            <th>Documentation Fee</th>
+                            <td id="documentation-fee"></td>
+                        </tr>
+                        <tr>
+                            <th>KKDF</th>
+                            <td>%15</td>
+                        </tr>
+                        <tr>
+                            <th>Total Amount</th>
+                            <td id="total-amount"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered border-warning mt-4 col-md-5 col-sm-12">
+                    <tbody>
+                        <tr>
+                            <th>Type of Loan</th>
+                            <td id="loan-type"></td>
+                        </tr>
+                        <tr>
+                            <th>Interest Rate</th>
+                            <td id="interest-rate"></td>
+                        </tr>
+                        <tr>
+                            <th>Expertise Fee</th>
+                            <td id="expertise-fee"></td>
+                        </tr>
+                        <tr>
+                            <th>BSMV</th>
+                            <td>%10</td>
+                        </tr>
+                        <tr>
+                            <th>Total Amount/Month</th>
+                            <td id="monthly-payment"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="./apps.js"></script>
+</body>
+
+</html>
