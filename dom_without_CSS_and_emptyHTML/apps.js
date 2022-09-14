@@ -88,12 +88,14 @@ delBtn.onmouseout = () => {
 }
 
 //clik to add and delete
-addBtn.addEventListener("click", () => {
-    const main_li = document.createElement("li")
-    main_li.style.listStyle = "none"
+addBtn.addEventListener("click", () => {   
     if (langInput.value == "") {
         alert("You did not enter any value!!!")
     } else {
+        const main_li = document.createElement("li")
+        main_li.style.listStyle = "none"
+        main_li.style.fontSize =    "1.3rem"
+        main_li.style.fontWeight = "600"
         main_ul.appendChild(main_li)
         main_li.innerText = `${main_ul.childElementCount}. ${langInput.value.toUpperCase()}`
         if (langInput.value.toLowerCase() === "javascript") {
