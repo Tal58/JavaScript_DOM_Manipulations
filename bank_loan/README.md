@@ -18,7 +18,7 @@ Purpose of the this project is to write a code that make a loan calculator web p
 <center> ⌛ Happy Coding  ✍ </center>
 
 <br><br>
-🌐 The desktop version of the web page is as follows;🧭
+🌐 The desktop version of the web page are as follows;🧭
 <br><br>
 
 ## 🖥️Desktop version
