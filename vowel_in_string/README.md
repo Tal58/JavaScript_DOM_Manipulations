@@ -20,6 +20,8 @@ At the end of the this coding challenge, you will be able to;
 - Take a string from user.
 - Calculate the number of vowels and present them on the page.
 
+🔗 To see live version 🎯https://tal58.github.io/JavaScript_DOM_Manipulations/vowel_in_string/
+
 
 <center> ⌛ Happy Coding  ✍ </center>
 
