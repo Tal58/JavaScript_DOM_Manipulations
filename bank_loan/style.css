@@ -8,7 +8,6 @@ body{
 }
 .month-input, .amount-input{
     border: 2px solid #ffc61d;
-    height: 7vh;
 }
 
 .p-display{
