@@ -1,4 +1,4 @@
-# Guess Number 🤔
+# Guess My Number 🤔
 
 👨‍💻 This project aims to make an game by using HTML/CSS/JavaScript.
 
@@ -12,7 +12,7 @@
 
 - improve HTML/CSS/JavaScript abilities.
 
-🔗 To see live version 🎯https://tal58.github.io/Bootstrap_Workshop/animation-game/
+🔗 To see live version 🎯https://tal58.github.io/Bootstrap_Workshop/guess_number_game/
    
 
 
