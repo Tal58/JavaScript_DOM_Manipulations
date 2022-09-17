@@ -12,7 +12,7 @@
 
 - improve HTML/CSS/JavaScript abilities.
 
-🔗 To see live version 🎯https://tal58.github.io/Bootstrap_Workshop/bootsrap-mihail_tech/
+🔗 To see live version 🎯https://tal58.github.io/Bootstrap_Workshop/animation-game/
    
 
 
