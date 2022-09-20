@@ -19,7 +19,7 @@
 
 <center> ⌛ Happy Coding  ✍ </center>
 
-🌐 The desktop and mobile versions of the web page are as follows;🧭
+🌐 The desktop version of the web page is as follows;🧭
 <br><br>
 
 ## 🖥️Desktop version
