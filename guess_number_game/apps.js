@@ -1,10 +1,10 @@
 let button = document.querySelector(".button")
-let buttonOn =  document.querySelector("#buttonOn")
+let buttonOn = document.querySelector("#buttonOn")
 let backgroundP = document.querySelector(".secret-number")
 let score = 10;
 let topScore = localStorage.getItem("topScore") || 0;
 document.querySelector(".top-score").textContent = topScore
-let randomNumber =0;
+let randomNumber = 0;
 
 //random number from 1 to 100
 // let randomNumber = Math.floor(Math.random() * 100) + 1;
@@ -15,12 +15,12 @@ document.querySelector(".check-btn").addEventListener("click", () => {
     backgroundP.innerHTML = ""
     const guessInput = Number(document.querySelector(".guess-input").value);
     const body = document.querySelector("body");
-   if (randomNumber == guessInput) {
+    if (randomNumber == guessInput) {
         backgroundP.innerHTML = `Congrats You win <i class="fa-solid fa-face-grin-hearts fa-2x"></i>`;
         document.querySelector(".check-btn").disabled = true
         document.querySelector(".guess-input").disabled = true
         document.querySelector(".check-btn").style.display = "none"
-        wincolor()        
+        wincolor()
         if (score > topScore) {
             localStorage.setItem("topScore", score);
             document.querySelector(".top-score").textContent = score
@@ -28,14 +28,14 @@ document.querySelector(".check-btn").addEventListener("click", () => {
     }
     else {
         if (score > 1) {
-            if (guessInput<=0 || guessInput>100){
+            if (guessInput <= 0 || guessInput > 100) {
                 backgroundP.innerHTML = "You made a mistake enter a number from 1 to 100"
                 score--;
-            } 
-            else{
+            }
+            else {
                 score--;
                 guessInput > randomNumber ? (backgroundP.innerHTML = `Decrease <i class="fa-solid fa-arrow-trend-down fa-2x"> </i>`) : (backgroundP.innerHTML = `Increase <i class="fa-solid fa-arrow-trend-up fa-2x"></i>`);
-            }         
+            }
 
         } else {
             backgroundP.innerHTML = `You Lost <i class="fa-regular fa-face-sad-tear fa-2x"></i> `
@@ -44,10 +44,10 @@ document.querySelector(".check-btn").addEventListener("click", () => {
             document.querySelector(".guess-input").disabled = true
             document.querySelector(".check-btn").style.display = "none"
             losecolor()
-            backgroundP.textContent = `Failed! Secret number was ${randomNumber}`           
+            backgroundP.textContent = `Failed! Secret number was ${randomNumber}`
         }
         document.querySelector(".score").innerText = score
-    }document.querySelector(".guess-input").value = ""
+    } document.querySelector(".guess-input").value = ""
 })
 //again button 
 document.querySelector(".again-btn").addEventListener("click", () => {
@@ -76,67 +76,71 @@ document.querySelector(".guess-input").addEventListener("keydown", (e) => {
 //opening message
 async function welcome() {
     backgroundP.innerHTML = "System is loading";
-    const newArr = ["System is loading.","System is loading..","System is loading...","System loaded", 'Lets Play <i class="fa-solid fa-face-grin-hearts"></i>',"Please enter a number"]
+    const newArr = ["System is loading.", "System is loading..", "System is loading...", "System loaded", 'Lets Play <i class="fa-solid fa-face-grin-hearts"></i>', "Please enter a number"]
     for (const x of newArr) {
-            let myPromise = new Promise(function (resolve) {
-                setTimeout(function () { resolve(`${x}`); }, 900);
-            });
-            backgroundP.innerHTML = await myPromise;  
-        }
-        document.querySelector(".check-btn").disabled = false
-        document.querySelector(".guess-input").disabled = false
-        document.querySelector(".check-btn").style.color = "red"
-        buttonOn.disabled= false
-        randomNumber = Math.floor(Math.random() * 100) + 1;
-        console.log(randomNumber)
+        let myPromise = new Promise(function (resolve) {
+            setTimeout(function () { resolve(`${x}`); }, 900);
+        });
+        backgroundP.innerHTML = await myPromise;
     }
+    document.querySelector(".check-btn").disabled = false
+    document.querySelector(".guess-input").disabled = false
+    document.querySelector(".check-btn").style.color = "red"
+    buttonOn.disabled = false
+    randomNumber = Math.floor(Math.random() * 100) + 1;
+    console.log(randomNumber)
+}
 
 
 //closing message
 async function close() {
     backgroundP.innerHTML = 'Mihail Tal was here <i class="fa-regular fa-chess-knight fa-2x"></i>'
-    let myPromise = new Promise(function(resolve) {
+    let myPromise = new Promise(function (resolve) {
         setTimeout(function () { resolve("black"); }, 1500);
     });
     backgroundP.style.backgroundColor = await myPromise
-    backgroundP.innerText = "" 
-    document.querySelector(".button").style.color = "white" 
-    document.querySelector(".check-btn").style.color = "white" 
-    document.querySelector(".check-btn").disabled = true     
-    document.querySelector(".guess-input").disabled = true  
+    backgroundP.innerText = ""
+    document.querySelector(".button").style.color = "white"
+    document.querySelector(".check-btn").style.color = "white"
+    document.querySelector(".check-btn").disabled = true
+    document.querySelector(".guess-input").disabled = true
     document.querySelector(".again-btn").disabled = true
-    document.querySelector(".guess-input").value = ""  
+    document.querySelector(".guess-input").value = ""
     score = 10;
     document.querySelector(".score").textContent = score;
     document.querySelector(".again-btn").style.display = "none"
-    document.querySelector(".check-btn").style.display = "block" 
+    document.querySelector(".check-btn").style.display = "block"
     document.body.style.backgroundColor = "#2d3436"
 }
 
 //changing backgrouncolor
-async function wincolor(){
-    const color = ["aqua","aquamarine","burlywood","coral","chocolate","chartreuse","green"]
-    for (const x of color){
+async function wincolor() {
+    const color = ["aqua", "aquamarine", "burlywood", "coral", "chocolate", "chartreuse", "green"]
+    for (const x of color) {
         console.log(x)
-        let myPromise = new Promise(function(resolve) {
-            setTimeout(function () { resolve(`${x}`); }, 1000);   
-        });document.body.style.backgroundColor = await myPromise
-    }document.querySelector(".again-btn").style.display = "block"
+        let myPromise = new Promise(function (resolve) {
+            setTimeout(function () { resolve(`${x}`); }, 1000);
+        }); document.body.style.backgroundColor = await myPromise
+    } 
+    document.querySelector(".again-btn").style.display = "block"
+    document.querySelector(".again-btn").disabled = false
 }
 
-async function losecolor(){
-    const color = ["brown","burlywood","cadetblue","coral","chocolate","red"]
-    for (const x of color){
+async function losecolor() {
+    const color = ["brown", "burlywood", "cadetblue", "coral", "chocolate", "red"]
+    for (const x of color) {
         console.log(x)
-        let myPromise = new Promise(function(resolve) {
-            setTimeout(function () { resolve(`${x}`); }, 1000);          
-        });document.body.style.backgroundColor = await myPromise
-    }document.querySelector(".again-btn").style.display = "block"
+        let myPromise = new Promise(function (resolve) {
+            setTimeout(function () { resolve(`${x}`); }, 1000);
+        }); document.body.style.backgroundColor = await myPromise
+    }
+    document.querySelector(".again-btn").style.display = "block"
+    document.querySelector(".again-btn").disabled = false
 }
 //On off button
 buttonOn.addEventListener("click", () => {
     if (backgroundP.style.backgroundColor == "cornsilk") {
-        close()        
+        close()
     } else {
         backgroundP.style.backgroundColor = "cornsilk"
         buttonOn.disabled = true
