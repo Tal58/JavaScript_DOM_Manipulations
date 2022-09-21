@@ -107,7 +107,10 @@ async function close() {
     document.querySelector(".again-btn").disabled = true
     document.querySelector(".guess-input").value = ""  
     score = 10;
-    document.querySelector(".score").textContent = score; 
+    document.querySelector(".score").textContent = score;
+    document.querySelector(".again-btn").style.display = "none"
+    document.querySelector(".check-btn").style.display = "block" 
+    document.body.style.backgroundColor = "#2d3436"
 }
 
 //changing backgrouncolor
