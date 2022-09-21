@@ -20,14 +20,10 @@ document.querySelector(".check-btn").addEventListener("click", () => {
         document.querySelector(".check-btn").disabled = true
         document.querySelector(".guess-input").disabled = true
         document.querySelector(".check-btn").style.display = "none"
-        wincolor()
-        
-        // body.className = "bg-success"
-        
+        wincolor()        
         if (score > topScore) {
             localStorage.setItem("topScore", score);
             document.querySelector(".top-score").textContent = score
-
         }
     }
     else {
@@ -43,7 +39,6 @@ document.querySelector(".check-btn").addEventListener("click", () => {
 
         } else {
             backgroundP.innerHTML = `You Lost <i class="fa-regular fa-face-sad-tear fa-2x"></i> `
-            // body.className = "bg-danger"
             score--;
             document.querySelector(".check-btn").disabled = true
             document.querySelector(".guess-input").disabled = true
@@ -86,8 +81,7 @@ async function welcome() {
             let myPromise = new Promise(function (resolve) {
                 setTimeout(function () { resolve(`${x}`); }, 900);
             });
-            backgroundP.innerHTML = await myPromise;
-           
+            backgroundP.innerHTML = await myPromise;  
         }
         document.querySelector(".check-btn").disabled = false
         document.querySelector(".guess-input").disabled = false
@@ -118,8 +112,7 @@ async function wincolor(){
     for (const x of color){
         console.log(x)
         let myPromise = new Promise(function(resolve) {
-            setTimeout(function () { resolve(`${x}`); }, 1000);
-            
+            setTimeout(function () { resolve(`${x}`); }, 1000);   
         });document.body.style.backgroundColor = await myPromise
     }document.querySelector(".again-btn").style.display = "block"
 }
@@ -129,8 +122,7 @@ async function losecolor(){
     for (const x of color){
         console.log(x)
         let myPromise = new Promise(function(resolve) {
-            setTimeout(function () { resolve(`${x}`); }, 1000);
-            
+            setTimeout(function () { resolve(`${x}`); }, 1000);          
         });document.body.style.backgroundColor = await myPromise
     }document.querySelector(".again-btn").style.display = "block"
 }
@@ -142,6 +134,5 @@ buttonOn.addEventListener("click", () => {
         backgroundP.style.backgroundColor = "cornsilk"
         buttonOn.disabled = true
         welcome()
-
     }
 })
