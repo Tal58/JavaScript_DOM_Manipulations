@@ -1,4 +1,5 @@
 let button = document.querySelector(".button")
+let buttonOn =  document.querySelector("#buttonOn")
 let backgroundP = document.querySelector(".secret-number")
 let score = 10;
 let topScore = localStorage.getItem("topScore") || 0;
@@ -86,10 +87,12 @@ async function welcome() {
                 setTimeout(function () { resolve(`${x}`); }, 900);
             });
             backgroundP.innerHTML = await myPromise;
+           
         }
         document.querySelector(".check-btn").disabled = false
         document.querySelector(".guess-input").disabled = false
         document.querySelector(".check-btn").style.color = "red"
+        buttonOn.disabled= false
     }
 
 
@@ -130,11 +133,13 @@ async function losecolor(){
     }document.querySelector(".again-btn").style.display = "block"
 }
 //On off button
-button.addEventListener("click", () => {
+buttonOn.addEventListener("click", () => {
     if (backgroundP.style.backgroundColor == "cornsilk") {
         close()        
     } else {
         backgroundP.style.backgroundColor = "cornsilk"
-        welcome()     
+        buttonOn.disabled = true
+        welcome()
+
     }
 })

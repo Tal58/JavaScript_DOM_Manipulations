@@ -37,10 +37,16 @@ body{
 .on_off{
     margin-top: 1%;
 }
-.button{
-    transition: 1.5sn;
+
+    
+
+button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    transition: 1.5s;
 }
-.button:hover{
+button:hover{
     transform: scale(90%);
     color: red;
 }
