@@ -25,6 +25,7 @@ body{
     position: relative;
 
 }
+/*to change content to "+"*/
 .accordion .content-container .question::after{
     content: "+";
     position: absolute;
@@ -54,6 +55,7 @@ body{
     transition: 1.5s;
 }
 
+/*to change content to "-"*/
 .accordion .content-container.active .question::after{
     content: "-";
     font-size: 3vw;
