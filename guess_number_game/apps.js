@@ -107,7 +107,8 @@ async function close() {
     document.querySelector(".button").style.color = "white" 
     document.querySelector(".check-btn").style.color = "white" 
     document.querySelector(".check-btn").disabled = true     
-    document.querySelector(".guess-input").disabled = true     
+    document.querySelector(".guess-input").disabled = true  
+    document.querySelector(".again-btn").disabled = true   
 }
 
 //changing backgrouncolor
