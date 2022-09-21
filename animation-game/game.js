@@ -3,6 +3,7 @@ const car = document.querySelector(".car");
 const ground = document.querySelector(".ground")
 const carImg =document.querySelector(".car img");
 let flag =true;
+//to activate the right and pop-up animation
 body.addEventListener("keydown", (e)=>{
     if (e.code === "Enter"){
         if (!ground.classList.contains("right")){
@@ -16,6 +17,8 @@ body.addEventListener("keydown", (e)=>{
     }
 })
 
+
+//to change the car image when keydown the escape button
 body.addEventListener("keydown", (e)=>{
     if(e.code ==="Escape"){
         if(flag){
