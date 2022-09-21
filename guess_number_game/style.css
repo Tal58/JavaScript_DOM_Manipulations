@@ -8,8 +8,14 @@ body{
     font-family: "Press Start 2P", cursive;
     color: white;
     background-color: #2d3436;
+    height: 100vh;
 }
-
+/* header{
+    height: 48.5vh;
+}
+.container{
+    height: 47vh;
+} */
 .secret-number{
     font-size: 2rem;
     border: 4px solid white;
@@ -18,10 +24,33 @@ body{
     justify-content: center;
     padding: 1.5rem;
     margin: 1rem auto;
-    max-width: 250px;
+    max-width: 40rem;
+    height: 20vh;
+    color: black;
+    background-color: black;
 }
 .secret-number,
 .guess-input,
 .btn{
     font-size: 1.6rem;
+}
+.on_off{
+    margin-top: 1%;
+}
+.button{
+    transition: 1.5sn;
+}
+.button:hover{
+    transform: scale(90%);
+    color: red;
+}
+
+.again-btn{
+    display: none;
+}
+
+@media only screen and (max-width: 450px) {
+    .secret-number{
+        font-size: 1.3rem;
+    }
 }

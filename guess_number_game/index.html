@@ -16,20 +16,22 @@
 <body>
     <header class="text-center mt-2 p-4">
         <h1>GUESS MY NUMBER</h1>
-        <div class="mt-4">
-            <p>Secret Number:</p>
-            <p class="secret-number">?</p>
+        <div class="mt-6">
+            <p class="secret-number"></p>
+            <i class="button fa-regular fa-circle-dot fa-3x"></i>
+            <p class="on_off">On/Off</p>
         </div>
     </header>
     <hr>
     <main class="container text-center p-3">
         <p>Select a number between 1-100</p>
         <section class="row justify-content-center align-items-center g-3 m-3">
-            <input type="number" class="col-md-4 p-2 guess-input text-center">
-            <button class="btn btn-outline-light col-md-4 p-2 check-btn">Check</button>
+            <input type="number" class="col-md-4 p-2 guess-input text-center" disabled="true">
+            <button class="btn btn-outline-light col-md-4 p-2 check-btn" disabled="true">Check</button>
+            <button class="btn btn-outline-light again-btn p-2 col-md-4">Again</button>
         </section>
         <section class="mt-4">
-            <p class="msg">Starting...</p>
+            <!-- <p class="msg">Starting...</p> -->
             <p class="score-label">
                 <i class="fa-solid fa-hashtag fa-2x"></i>
                 Score:
@@ -40,7 +42,7 @@
                 <span class="top-score">0</span>
             </p>
             </p>
-            <button class="btn btn-outline-light again-btn p-2 mt-4 w-50">Again</button>
+            <!-- <button class="btn btn-outline-light again-btn p-2 mt-4 w-50">Again</button> -->
 
         </section>
 

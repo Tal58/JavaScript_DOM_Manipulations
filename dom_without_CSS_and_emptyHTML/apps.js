@@ -87,7 +87,7 @@ delBtn.onmouseout = () => {
     delBtn.style.fontSize = "1rem"
 }
 
-//clik to add and delete
+//clik to add and delete button
 addBtn.addEventListener("click", () => {   
     if (langInput.value == "") {
         alert("You did not enter any value!!!")
