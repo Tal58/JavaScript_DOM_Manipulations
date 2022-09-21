@@ -3,6 +3,7 @@ let btn = document.querySelector("#new-place");
 let quote = document.querySelector(".quote");
 let Image = document.querySelector("body");
 
+//quotes includes name of the place named quote and its image named Image each element of the quotes designed as an object
 const quotes = [
   {
     quote: "Patara Ancient City,Antalya",
@@ -77,9 +78,11 @@ const quotes = [
     Image: "./images/mount-harsena-and-the-rock-tombs-of-the-pontic-kings-amasya.jpg"
   }
  ];
+
+ //when user click the button
 btn.addEventListener("click", function () {
-  let random = Math.floor(Math.random() * quotes.length);
-  quote.innerText = quotes[random].quote;
-  document.body.style.background = `url(${(quotes[random].Image)}) no-repeat center center/ cover`;
-  document.getElementById("header").style.color = "white"
+  let random = Math.floor(Math.random() * quotes.length);// random gets an random variable related to the length of the quotes
+  quote.innerText = quotes[random].quote; //quote.innerText gets quote from quotes randomly
+  document.body.style.background = `url(${(quotes[random].Image)}) no-repeat center center/ cover`; // body background changes according to the random index number
+  document.getElementById("header").style.color = "white"// to change the color of header
 });
