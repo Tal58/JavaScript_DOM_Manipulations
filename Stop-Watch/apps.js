@@ -1,3 +1,4 @@
+//variables
 const start = document.querySelector('#start');
 const resetBtn = document.querySelector('#resetBtn');
 
@@ -47,7 +48,7 @@ function stopWatch(){
 
 // window.setInterval(stopWatch, 1000)
 
-
+//start-stop event when user click start button
 start.addEventListener("click", function(){
     if(timerStatus ==="stopped"){
         timerInterval = window.setInterval(stopWatch,1000);
@@ -60,6 +61,7 @@ start.addEventListener("click", function(){
     }
 })
 
+//to reset time
 resetBtn.addEventListener("click", function(){
     // window.clearInterval(timerInterval);
     seconds = 0;
