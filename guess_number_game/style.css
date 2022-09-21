@@ -38,7 +38,11 @@ body{
     margin-top: 1%;
 }
 
-    
+/*hidden arrow*/
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
 button{
     background-color: transparent;

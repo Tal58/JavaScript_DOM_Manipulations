@@ -4,11 +4,11 @@ let backgroundP = document.querySelector(".secret-number")
 let score = 10;
 let topScore = localStorage.getItem("topScore") || 0;
 document.querySelector(".top-score").textContent = topScore
-
+let randomNumber =0;
 
 //random number from 1 to 100
-let randomNumber = Math.floor(Math.random() * 100) + 1;
-console.log(randomNumber)
+// let randomNumber = Math.floor(Math.random() * 100) + 1;
+// console.log(randomNumber)
 
 //check button
 document.querySelector(".check-btn").addEventListener("click", () => {
@@ -47,7 +47,7 @@ document.querySelector(".check-btn").addEventListener("click", () => {
             backgroundP.textContent = `Failed! Secret number was ${randomNumber}`           
         }
         document.querySelector(".score").innerText = score
-    }
+    }document.querySelector(".guess-input").value = ""
 })
 //again button 
 document.querySelector(".again-btn").addEventListener("click", () => {
@@ -87,6 +87,8 @@ async function welcome() {
         document.querySelector(".guess-input").disabled = false
         document.querySelector(".check-btn").style.color = "red"
         buttonOn.disabled= false
+        randomNumber = Math.floor(Math.random() * 100) + 1;
+        console.log(randomNumber)
     }
 
 
@@ -103,7 +105,9 @@ async function close() {
     document.querySelector(".check-btn").disabled = true     
     document.querySelector(".guess-input").disabled = true  
     document.querySelector(".again-btn").disabled = true
-    document.querySelector(".guess-input").value = ""   
+    document.querySelector(".guess-input").value = ""  
+    score = 10;
+    document.querySelector(".score").textContent = score; 
 }
 
 //changing backgrouncolor
