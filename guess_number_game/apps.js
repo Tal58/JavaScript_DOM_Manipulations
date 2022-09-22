@@ -60,6 +60,7 @@ document.querySelector(".again-btn").addEventListener("click", () => {
     backgroundP.textContent = "You wanna play again :)";
     document.querySelector(".check-btn").disabled = false;
     document.querySelector(".guess-input").disabled = false;
+    document.querySelector(".guess-input").focus();
     document.querySelector("body").classList.remove("bg-success", "bg-danger");
     document.querySelector(".guess-input").value = "";
     document.body.style.backgroundColor = "#2d3436"
@@ -85,6 +86,7 @@ async function welcome() {
     }
     document.querySelector(".check-btn").disabled = false
     document.querySelector(".guess-input").disabled = false
+    document.querySelector(".guess-input").focus();
     document.querySelector(".check-btn").style.color = "red"
     buttonOn.disabled = false
     randomNumber = Math.floor(Math.random() * 100) + 1;
