@@ -35,7 +35,7 @@ Build a Calculator that is functionally similar to an ios device calculator.
 - CSS
 
 - JS
-🔗 To see live version 🎯https://tal58.github.io/HTML_CSS_WORKSHOP/Ios-Calculator/
+🔗 To see live version 🎯https://tal58.github.io/JavaScript_DOM_Manipulations/Ios-Calculator/
 
 <p align="center"> ✍ Happy Coding ⌛ <p>
 
