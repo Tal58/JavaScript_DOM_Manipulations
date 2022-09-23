@@ -43,5 +43,5 @@ Build a Calculator that is functionally similar to an ios device calculator.
 
 ##  🖥️Desktop version
 
-<img src="./calculator.gif" align="left" alt="desktop_version">
+<img src="./desktop.gif" align="left" alt="desktop_version">
 
