@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.container {
+    border: 2px solid red;
+    height: 80vh;
+    width: 30%;
+    padding: 1%;
+    border-radius: 3vw;
+    display: grid;
+    gap: 0.3rem;
+    background-color: black;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    grid-template-areas:
+        "s s s s"
+        "s s s s"
+        "s s s s"
+        "s s s s"
+        "s s s s"
+        "off ac c sX"
+        "s7 s8 s9 m"
+        "s4 s5 s6 pl"
+        "s1 s2 s3 d"
+        "s0 po e pi"
+        "sin cos tn sqr"
+        "rnd log exp xy"
+        "f ln p eq";
+    color: white;
+}
+
+.calculator {
+    display: flex;
+    background-color: #333333;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 1.5s;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.calculator:hover {
+    transform: scale(90%);
+    color: red;
+}
+
+.screen {
+    grid-area: s;
+    background-color:black;
+    margin: 3%;
+    border-radius: 1rem;
+    transition: 1s;
+    color: black;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    align-items: center;
+}
+
+
+.ac {
+    grid-area: ac;
+}
+
+.c {
+    grid-area: c;
+}
+
+.percentage {
+    grid-area: p;
+}
+
+.divide {
+    grid-area: d;
+    background-color: #f1a33c ;
+}
+
+.seven {
+    grid-area: s7;
+}
+
+.eight {
+    grid-area: s8;
+}
+
+.nine {
+    grid-area: s9;
+}
+
+.X {
+    grid-area: sX;
+    background-color: #f1a33c ;
+}
+
+.four {
+    grid-area: s4;
+}
+
+.five {
+    grid-area: s5;
+}
+
+.six {
+    grid-area: s6;
+}
+
+.minus {
+    grid-area: m;
+    background-color: #f1a33c ;
+}
+
+.one {
+    grid-area: s1;
+}
+
+.two {
+    grid-area: s2;
+}
+
+.three {
+    grid-area: s3;
+}
+
+.plus {
+    grid-area: pl;
+    background-color: #f1a33c ;
+}
+.point{
+    grid-area: po;
+}
+.off{
+    grid-area: off;
+    font-size: 1.5rem;
+}
+.zero {
+    grid-area: s0;
+}
+
+.equal {
+    grid-area: eq;
+}
+
+.factorial{
+    grid-area: f;
+}
+
+.ln{
+    grid-area: ln;
+}
+.log{
+    grid-area: log;
+}
+
+.square-root{
+    grid-area: sqr;
+}
+.xy{
+    grid-area: xy;
+}
+
+.exp{
+    grid-area: exp;
+    font-size: 1.3rem;
+}
+
+.rnd{
+    grid-area: rnd;
+    font-size: 1.3rem;
+}
+.e{
+    grid-area: e;
+}
+.tan{
+    grid-area: tn;
+}
+.cos{
+    grid-area: cos;
+}
+.sin{
+    grid-area: sin;
+}
+.pi{
+    grid-area: pi;
+}
+@media only screen and (max-width: 821px) {
+    .container{
+        width: 50%;
+    }
+    .screen{
+        font-size: 2.5rem;
+    }
+    .calculator{
+        font-size: 5vw;
+    }
+    .off, .rnd, .exp{
+        font-size: 0.5rem;
+    }
+    
+}
