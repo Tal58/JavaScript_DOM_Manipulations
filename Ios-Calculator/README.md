@@ -6,7 +6,6 @@
 ## Problem Statement
 
 - Your company has recently started on a project that aims to create a calculator. So you and your colleagues have started to work on the project. Instead of this duty, I additionally add extra properties to my calculator.
-<br>
 - Challenge is to build out this landing page and get it looking as close to the professional design as possible...🎯 
 
 ## Project Skeleton 
