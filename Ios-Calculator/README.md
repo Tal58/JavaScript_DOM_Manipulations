@@ -13,7 +13,7 @@
 ```
 003-calculator(folder)
 |
-|----readme.md         # Given to the students (Definition of the project)          
+|----readme.md                 
 |----solution
         |----index.html  
         |----style.css   
@@ -35,7 +35,7 @@ Build a Calculator that is functionally similar to an ios device calculator.
 - CSS
 
 - JS
-🔗 To see live version 🎯https://tal58.github.io/HTML_CSS_WORKSHOP/hc-ass4-Calculator/
+🔗 To see live version 🎯https://tal58.github.io/HTML_CSS_WORKSHOP/Ios-Calculator/
 
 <p align="center"> ✍ Happy Coding ⌛ <p>
 
