@@ -1,6 +1,6 @@
 # Guess My Number -With async function 🤔
 
-👨‍💻 This project aims to make an game by using HTML/CSS/JavaScript.
+👨‍💻 This project aims to make a game by using HTML/CSS/JavaScript.
 
 ## Learning Outcomes
 
