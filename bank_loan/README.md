@@ -1,6 +1,6 @@
 # DOM Manipulations  
 
-Purpose of the this project is to write a code that make a loan calculator web page.
+Purpose of the this project is to write a code that make a loan calculation on web page.
 
 ## Outcomes
 
