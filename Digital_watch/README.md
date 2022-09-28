@@ -37,7 +37,7 @@ Build a Digital Clock web site
 
 - use git commands (push, pull, commit, add etc.) and Github as Version Control System.
 
-🔗 To see live version 🎯https://tal58.github.io/API_WORKSHOP/World_flags_memory_competition/
+🔗 To see live version 🎯https://tal58.github.io/JavaScript_DOM_Manipulations/Digital_watch/
 
 <p align='center'> ⌛ Happy Coding  ✍ </p>
 
